@@ -3,11 +3,23 @@
 
 # kickstarter-analysis
 The dataset is used for various analyses and visualizations, aiming to explore patterns and trends in Kickstarter campaigns. The goal is to understand what makes a Kickstarter project successful or failed.
-## Data Handling Summary
-1-Drop unnecessary columns which including (url,comments,name) <br>
-2-Removed duplicate rows <br>
-3-New column were created for the purpose of deeper analysis, such as (in us) These column helped us understand project dynamics and identify key patterns that influence success. However, these columns were not relevant for machine learning model training, where we focus on the original, more fundamental features of the dataset.<br>
-4-A small number of rows with missing values in (location,reward levels) were dropped would not significantly impact the dataset or analysis.<br>
+## Data Cleaning and Preprocessing
+The dataset was cleaned and preprocessed in the following ways:
+1. **Dropped Unnecessary Columns**:  
+   Removed columns that were not essential for the analysis or modeling, including:
+   - `url`
+   - `comments`
+   - `name`  
+   These columns contained irrelevant or redundant information that did not contribute to the project's core analysis.
+2. **Removed Duplicate Rows**:  
+   Duplicate rows were identified and removed to ensure the integrity of the dataset and to avoid bias in the analysis.
+3. **Created New Columns for Deeper Analysis**:  
+   New columns were added for the purpose of exploring deeper insights into the data, such as a column indicating whether the project was based in the U.S. (`in_us`).  
+   These columns helped us understand the dynamics of the project and identify key patterns that influence success. However, these additional features were not included in the machine learning model training as they were not relevant for predicting the project's success, which relies on more fundamental features of the dataset.
+4. **Dropped Rows with Missing Values**:  
+   A small number of rows with missing values in the `location` and `reward levels` columns were removed.  
+   Since these missing values represented only a small fraction of the dataset, their removal did not significantly impact the overall analysis or conclusions.
+These steps helped ensure that the data was clean, relevant, and ready for further analysis or modeling.
 ## Data Dictionary
 | Column Name         | Description                                                       | Data Type    |
 |---------------------|-------------------------------------------------------------------|--------------|
