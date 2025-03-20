@@ -27,7 +27,7 @@ These steps helped ensure that the data was clean, relevant, and ready for furth
 | `category`          | The category under which the project was launched (e.g., "Technology", "Art"). | Object       |
 | `subcategory`       | A more specific classification within the main `category`                             | Object      |
 | `location  `        | The geographic location of the project creator or where the project is based.          | Object      |
-| `status`            | The final status of the project (e.g., "successful", "failed").   | Object  |
+| `status`            | The status of the funds received.   | Object  |
 | `goal`              | The funding goal the project aims to raise in USD.                             | Float      |
 | `pledged`           | The total amount of money pledged by backers in USD.              | Float        |
 | `funded percentage` | The percentage of the funding goal that the project                             | Float     |
